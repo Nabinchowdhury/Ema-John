@@ -46,6 +46,7 @@
 
 .delete-btn button:hover {
     background-color: rgba(235, 87, 87, 0.5);
+    cursor: pointer;
 }
 
 .dlt-icon {

@@ -3,3 +3,17 @@
     top: 0;
     padding: 30px 20px;
 }
+
+.clear-cart {
+    background-color: rgba(255, 48, 48, 1);
+    border: none;
+    color: white;
+    border-radius: 4px;
+    width: 232px;
+    height: 48px;
+    margin: 18px;
+}
+
+.clear-cart:hover {
+    cursor: pointer;
+}
