@@ -1,0 +1,55 @@
+.review-orders {
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
+    height: 107px;
+    max-width: 571px;
+    margin: 21px auto;
+    display: flex;
+
+}
+
+.image-product img {
+    width: 91px;
+    margin: 8px;
+}
+
+.product-details {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0px 10px;
+}
+
+.product-info {}
+
+.product-info h5 {
+    margin: 0px;
+}
+
+.product-info p {
+    margin: 0px;
+}
+
+.delete-btn {
+    display: flex;
+    align-items: center;
+
+}
+
+.delete-btn button {
+    width: 55px;
+    height: 55px;
+    border: 0;
+    border-radius: 50%;
+    background-color: rgba(235, 87, 87, 0.3)
+}
+
+.delete-btn button:hover {
+    background-color: rgba(235, 87, 87, 0.5);
+}
+
+.dlt-icon {
+    height: 31.5px;
+    width: 27.5px;
+    color: rgba(235, 87, 87, 1)
+}
