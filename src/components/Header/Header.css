@@ -4,8 +4,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .header a {
@@ -17,4 +17,10 @@
 
 .header a:hover {
     color: orange;
+}
+
+@media screen and (min-width:480px) and (max-width:760px) {
+    .header {
+        flex-direction: column;
+    }
 }

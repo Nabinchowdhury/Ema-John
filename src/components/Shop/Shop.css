@@ -26,3 +26,36 @@
     height: 48px;
     margin: 18px;
 }
+
+@media screen and (max-width:800px) {
+    .shop-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .product-conatainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width:801px) and (max-width:1200px) {
+    .shop-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .product-conatainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width:1201px) and (max-width:1400px) {
+    .shop-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .product-conatainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
