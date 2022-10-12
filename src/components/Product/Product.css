@@ -65,3 +65,6 @@
 .btn-cart .btn-text {
     margin-right: 10px;
 }
+
+
+@media screen and (max-width:760px) {}
