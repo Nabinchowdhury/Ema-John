@@ -27,6 +27,11 @@
     margin: 18px;
 }
 
+.review:hover {
+    cursor: pointer;
+    background-color: rgb(210, 240, 240);
+}
+
 @media screen and (max-width:800px) {
     .shop-container {
         display: flex;

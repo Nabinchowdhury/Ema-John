@@ -5,7 +5,7 @@
 }
 
 .clear-cart {
-    background-color: rgba(255, 48, 48, 1);
+    background-color: rgba(255, 48, 48, .9);
     border: none;
     color: white;
     border-radius: 4px;
@@ -16,4 +16,5 @@
 
 .clear-cart:hover {
     cursor: pointer;
+    background-color: rgba(255, 48, 48, 1);
 }

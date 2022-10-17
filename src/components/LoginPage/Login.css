@@ -1,0 +1,61 @@
+.form {
+    height: 600px;
+    width: 500px;
+    border-radius: 8px;
+    border: 1px solid rgba(149, 160, 167, 1);
+    margin: 1% auto;
+    text-align: center;
+    color: #2A414F;
+}
+
+.form h1 {
+    text-align: center;
+    margin: 5% auto;
+}
+
+.form-control {
+    width: 80%;
+    height: 14%;
+    margin: 5% auto;
+}
+
+.form-control label {
+    margin-left: 3%;
+    display: block;
+    margin-bottom: 2%;
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: 0.0015em;
+    text-align: left;
+}
+
+.form-control input {
+    width: 95%;
+    height: 60%;
+    border: 1px solid rgba(149, 160, 167, 1);
+    border-radius: 8px;
+    padding-left: 2%;
+}
+
+.btn-submit {
+    width: 79%;
+    height: 10%;
+    background-color: rgba(255, 153, 0, 0.3);
+    border-radius: 5px;
+    border: none;
+    margin-top: 3%;
+    font-weight: 400;
+    font-size: 1.2em;
+    letter-spacing: 0.0015em;
+    color: #0E161A;
+}
+
+.btn-submit:hover {
+    background-color: rgba(255, 153, 0, 0.4);
+    cursor: pointer;
+}
+
+.toggle-login-signup {
+    text-decoration: none;
+    color: rgba(255, 153, 0, 1)
+}
