@@ -1,10 +1,11 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../Contexts/UserContext';
 import "./Login.css"
 
 const Login = () => {
     const { logUserIn } = useContext(AuthContext)
+    const [error, setError] = useState("")
     // console.log(user)
     const navigate = useNavigate()
 
@@ -21,8 +22,12 @@ const Login = () => {
                 const user = result.user
                 console.log("Log in successfull")
                 form.reset()
+                setError("")
                 navigate(from, { replace: true })
-            }).catch(error => console.error("ERROR", error))
+            }).catch(error => {
+                console.error("ERROR", error)
+                setError(error.message)
+            })
 
     }
 
@@ -38,10 +43,11 @@ const Login = () => {
                     <label >Password</label>
                     <input type="password" name='password' placeholder='Enter your password' required />
                 </div>
+                <p style={{ color: "red" }}>{error}</p>
                 <button className='btn-submit'>Login</button>
                 <p><small>New to Ema-John? <Link to="/register" className='toggle-login-signup'>Create an account</Link></small></p>
             </form>
-        </div>
+        </div >
     );
 };
 
