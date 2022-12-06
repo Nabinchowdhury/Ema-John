@@ -17,7 +17,7 @@ const Shop = () => {
     const pages = Math.ceil(count / capacity)
 
     useEffect(() => {
-        fetch(`http://localhost:5000/products?pageNumber=${pageNumber}&capacity=${capacity}`)
+        fetch(`https://ema-john-server-nabinchowdhury.vercel.app/products?pageNumber=${pageNumber}&capacity=${capacity}`)
             .then(res => res.json())
             .then(data => {
                 setCount(data.count)
@@ -30,7 +30,7 @@ const Shop = () => {
         const shoppingCart = getFromDb();
         const ids = Object.keys(shoppingCart)
         // console.log(ids)
-        fetch("http://localhost:5000/productsById", {
+        fetch("https://ema-john-server-nabinchowdhury.vercel.app/productsById", {
             method: "POST",
             headers: {
                 'content-type': "application/json"
