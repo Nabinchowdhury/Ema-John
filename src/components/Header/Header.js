@@ -19,7 +19,7 @@ const Header = () => {
         <div className='header'>
             <Link to="/"><img src={logo} alt="" /></Link>
             <div className='nav'>
-                <Link to="/shop">Shop</Link>
+                <Link to="/shop" >Shop</Link>
                 <Link to="/order">Order</Link>
                 <Link to="/inventory">Inventory</Link>
                 <Link to="/about">About</Link>

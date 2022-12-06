@@ -10,7 +10,7 @@ const Order = () => {
     const [cart, setCart] = useState(initialCart);
 
     const deleteItem = id => {
-        const rest = cart.filter(product => product.id !== id)
+        const rest = cart.filter(product => product._id !== id)
         setCart(rest)
         removeFromDb(id)
     }
@@ -23,7 +23,7 @@ const Order = () => {
         <div className='shop-container'>
             <div className='order-container'>
                 {
-                    cart.map(product => <ReviewOrders key={product.id} product={product} deleteItem={deleteItem}></ReviewOrders>)
+                    cart.map(product => <ReviewOrders key={product._id} product={product} deleteItem={deleteItem}></ReviewOrders>)
                 }
                 {
                     cart.length === 0 && <h2>No Order yet. <Link to="/shop">Shop now</Link></h2>

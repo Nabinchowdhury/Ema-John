@@ -37,6 +37,11 @@
     cursor: pointer;
 }
 
+.activeClassName {
+    text-decoration: line-through;
+    color: blue;
+}
+
 @media screen and (max-width:760px) {
     .header {
         flex-direction: column;

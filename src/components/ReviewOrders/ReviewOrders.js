@@ -5,7 +5,8 @@ import "./ReviewOrders.css"
 const ReviewOrders = ({ product, deleteItem }) => {
     // console.log(product)
     // console.log(deleteItem)
-    const { id, img, name, price, quantity, shipping } = product
+    const { _id, img, name, price, quantity, shipping } = product
+    // console.log(product)
     return (
         <div className="review-orders">
             <div className="image-product">
@@ -20,7 +21,7 @@ const ReviewOrders = ({ product, deleteItem }) => {
                     <p>Quantity:{quantity}</p>
                 </div>
                 <div className='delete-btn'>
-                    <button onClick={() => deleteItem(id)}>
+                    <button onClick={() => deleteItem(_id)}>
                         <FontAwesomeIcon icon={faTrashAlt} className="dlt-icon"></FontAwesomeIcon>
                     </button>
                 </div>
